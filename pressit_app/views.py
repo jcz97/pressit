@@ -21,5 +21,5 @@ def generate_sentence(request):
         presence_penalty=0,
     )
         sentence = response.choices[0].message["content"].strip()
-        return render(request, 'pressit/generate.html', {'sentence': sentence})
-    return render(request, 'pressit/generate.html')
+        return render(request, 'pressit_app/generate.html', {'sentence': sentence})
+    return render(request, 'pressit_app/generate.html')
