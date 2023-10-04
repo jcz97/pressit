@@ -1,1 +1,1 @@
-web: gunicorn pressit_app.wsgi --log-file -
+web: gunicorn pressit_app.wsgi -b :8000
