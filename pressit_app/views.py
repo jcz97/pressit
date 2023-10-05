@@ -1,7 +1,9 @@
 from django.shortcuts import render
 from django.conf import settings
+from django.views.decorators.csrf import csrf_protect
 import openai
 
+@csrf_protect
 def generate_sentence(request):
     openai.api_key = settings.OPENAI_API_KEY
     if request.method == 'POST':
