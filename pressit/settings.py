@@ -28,7 +28,7 @@ SECRET_KEY = "django-insecure-an_^qgz1oc^xtm_6bvbdz-!@=8rlk1x8j0ur5lu5_=y6n2zt5m
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["https://pressit-production.up.railway.app"]
+ALLOWED_HOSTS = ["*"]
 
 
 # Application definition
@@ -53,6 +53,8 @@ MIDDLEWARE = [
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
     "corsheaders.middleware.CorsMiddleware",
 ]
+
+CORS_TRUSTED_ORIGINS = ['https://pressit-production.up.railway.app']
 
 ROOT_URLCONF = "pressit.urls"
 
@@ -134,5 +136,3 @@ STATICFILES_DIRS = [
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
-
-CORS_ALLOWED_ORIGINS = ['https://pressit-production.up.railway.app']
