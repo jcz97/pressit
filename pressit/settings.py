@@ -26,9 +26,9 @@ OPENAI_API_KEY = os.environ.get('OPENAI_API_KEY')
 SECRET_KEY = "django-insecure-an_^qgz1oc^xtm_6bvbdz-!@=8rlk1x8j0ur5lu5_=y6n2zt5m"
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ["*"]
+ALLOWED_HOSTS = ["pressit-production.up.railway.app", "localhost", "127.0.0.1"]
 
 
 # Application definition
@@ -55,7 +55,7 @@ MIDDLEWARE = [
     "corsheaders.middleware.CorsMiddleware",
 ]
 
-CSRF_TRUSTED_ORIGINS = ["https://pressit-production.up.railway.app/"]
+CSRF_TRUSTED_ORIGINS = ["https://pressit-production.up.railway.app"]
 
 ROOT_URLCONF = "pressit.urls"
 
@@ -123,9 +123,9 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
-STATIC_URL = "static/"
+STATIC_URL = "/staticfiles/"
 
-STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")
+STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles/")
 
 """
 STATICFILES_DIRS = [
