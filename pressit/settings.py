@@ -28,7 +28,7 @@ SECRET_KEY = "django-insecure-an_^qgz1oc^xtm_6bvbdz-!@=8rlk1x8j0ur5lu5_=y6n2zt5m
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["*"]
+ALLOWED_HOSTS = ["https://pressit-production.up.railway.app"]
 
 
 # Application definition
