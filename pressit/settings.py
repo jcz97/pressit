@@ -55,7 +55,7 @@ MIDDLEWARE = [
     "corsheaders.middleware.CorsMiddleware",
 ]
 
-CSRF_TRUSTED_ORIGINS = ["pressit-production.up.railway.app/pressit"]
+CSRF_TRUSTED_ORIGINS = ["https://pressit-production.up.railway.app/pressit"]
 
 ROOT_URLCONF = "pressit.urls"
 
