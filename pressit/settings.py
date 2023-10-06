@@ -35,6 +35,7 @@ ALLOWED_HOSTS = ["pressit-production.up.railway.app", "localhost", "127.0.0.1"]
 
 INSTALLED_APPS = [
     "pressit_app",
+    "bootstrap5",
     "django.contrib.admin",
     "django.contrib.auth",
     "django.contrib.contenttypes",
