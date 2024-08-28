@@ -23,3 +23,4 @@ def generate_sentence(request):
         sentence = response.choices[0].message["content"].strip()
         return render(request, 'pressit_app/generate.html', {'sentence': sentence})
     return render(request, 'pressit_app/generate.html')
+
